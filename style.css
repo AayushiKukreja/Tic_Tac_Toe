@@ -154,3 +154,8 @@ body {
 .Button2 {
   padding: 7px 35px;
 }
+
+#NextPage {
+  color: white;
+  text-decoration: none;
+}

@@ -15,14 +15,13 @@
 
       if (str1 === "" && str2 == "") {
         alert("Please enter the required details!");
+        document.getElementById("NextPage").href = "";
 
       } else {
         alert("Player 1 is: " + str1 + " , " + str1 + " is assigned an initial 'X'");
         alert("Player 2 is: " + str2 + " , " + str2 + " is assigned an initial 'O'");
-
+        document.getElementById("NextPage").href = "page2.html";
       }
-
-
     }
   </script>
   <!-- Link to fonts -->
@@ -45,15 +44,14 @@
       <label>
         <h2 class="heading1">Enter Player 1</h2>
       </label>
-      <input type="text" id="fname" onchange="check()" autocomplete="off" required><br><br>
+      <input type="text" id="fname" autocomplete="off" required><br><br>
       <label>
         <h2 class="heading2">Enter Player 2</h2>
       </label>
-      <input  type="text" id="lname" autocomplete="off" required><br><br>
+      <input type="text" id="lname" autocomplete="off" required><br><br>
     </form>
     <button onclick="fn1()" class="btn btn-outline-light btn-lg Button1">Submit</button>
-    <a href="page2.html">
-      <button href="page2.html" class="btn btn-outline-dark btn-lg Button2">Play</button>
+    <button  class="btn btn-outline-dark btn-lg Button2"><a id="NextPage" href="">Play</button>
   </center>
 </body>
 
